@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the Makewood theme.
+ */
+
+use Drupal\Core\Template\Attribute;
+
+/**
+ * Implements hook_preprocess_HOOK() for node--woodproduct.html.twig
+ */
+
+function makewood_preprocess_node(&$vars) {
+    $node_type = $vars['node']->getType();
+    if ($node_type === "woodproduct") {
+        $vars['foobar_contribute_block'] = $block = \Drupal::service('plugin.manager.block')
+            ->createInstance('foobar_contribute_form_block', [])
+            ->build();
+    }
+}

@@ -1,0 +1,6 @@
+global-styling:
+  version: VERSION
+  css:
+    base:
+      css/style.css: {}
+      css/bootstrap-3-vert-offset-shim.css: {}

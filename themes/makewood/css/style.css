@@ -1,0 +1,9 @@
+.path-frontpage .node--type-woodproduct.node--promoted.node--view-mode-teaser .field__item {
+    float: left;
+    padding-right: 10px;
+}
+
+/* Fixing of missed top border for acrossing of Bootstrap 3 theme & calendar 8.x module */
+.calendar-calendar .day-view .full div.single-day {
+    padding-top: 1px;
+}
