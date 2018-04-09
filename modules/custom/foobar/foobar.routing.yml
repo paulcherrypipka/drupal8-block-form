@@ -1,0 +1,8 @@
+foobar.startpage:
+  path: '/start'
+  defaults:
+    _controller: '\Drupal\foobar\Controller\FoobarController::foobarStartPage'
+    _title: 'Custom form with field Name only'
+    #_form: '\Drupal\foobar\Form\Foobar'
+  requirements:
+    _permission: 'view content'
